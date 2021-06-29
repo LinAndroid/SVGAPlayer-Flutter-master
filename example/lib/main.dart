@@ -13,6 +13,7 @@ class ExampleApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   final samples = const <String>[
     "assets/test_update.svga",
+    "assets/sound_wave_male_new.svga"
     // "https://cdn.jsdelivr.net/gh/svga/SVGA-Samples@master/EmptyState.svga",
     // "https://cdn.jsdelivr.net/gh/svga/SVGA-Samples@master/HamburgerArrow.svga",
     // "https://cdn.jsdelivr.net/gh/svga/SVGA-Samples@master/PinJump.svga",
@@ -124,12 +125,10 @@ class _SVGASampleScreenState extends State<SVGASampleScreen>
                       onTap: () {
                         print("哈哈哈哈哈哈哈哈哈哈");
                       },
-                      child: Container(
-                        width: 1280,
-                        height: 1920,
-                        // color: Colors.transparent,
+                      // child: Container(
+                      //   color: Colors.transparent,
                         child: SVGAImage(this.animationController!),
-                      ),
+                      // ),
                     )),
           Positioned(
               bottom: 0,
